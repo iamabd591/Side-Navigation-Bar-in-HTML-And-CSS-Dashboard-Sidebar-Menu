@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 130vh;
+    overflow: hidden;
+}
+
+.slidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 6px 14px;
+    background: rgb(185, 117, 249);
+}
+
+.slidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_content .logo i {
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.slidebar #btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    top: 6px;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 5px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.slidebar ul {
+    margin-top: 20px;
+}
+
+.slidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 10px 5px;
+    font-size: 20px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.slidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: bisque;
+    transition: all 0.4s ease;
+}
+
+.slidebar ul li a:hover {
+    color: rgb(185, 117, 249);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.slidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.slidebar ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-left: 50px;
+    border-radius: 12px;
+    color: rgb(185, 117, 249);
+    background: #fff;
+}
+
+.slidebar ul li .bx-search-alt-2 {
+    position: absolute;
+    z-index: 99;
+    color: rgb(185, 117, 249);
+    font-size: 22px;
+}
